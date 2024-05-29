@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Majid</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+
+</head>
+<body id="body">
+    <!--Code for menu. i gave it an ID for darkmode-->
+    <ul id="menu">
+        <div class="left">
+        <div class="circle"></div>
+          <li><a href="#Logo" class="logo" id="menuitem">Majid Jahwari</a></li>
+        </div>
+        <div class="right">
+          <li><a href="#Home" class="menu-item" id="menubutton">Home</a></li>
+          <li><a href="#Work" class="menu-item" id="workbutton">Work</a></li>
+          <li><a href="About.html" class="menu-item" id="aboutbutton">About</a></li>
+        </div>
+      </ul>
+
+<!--Text for dark mode-->
+<div class="dark-mode-text">
+  <p class="text-element">Press circle for <br>dark mode</p>
+  <img class="Arrow-darkmode" src="Pics\arrow.JPG" alt="arrow for darkmode">
+</div>
+
+
+<!--Code for the shapes home page-->
+      <div class="orange-square"></div>
+      <div class="green-square"></div>
+      <div class="blue-square"></div>
+      <div class="blue-triangle"></div>
+      <div class="orange-circle" id="dark-mode-button"></div>
+      <script src="script.js"></script>
+      
+<!--The title text next to the hat(shapes). I did <br> to make them in lines-->
+      <div class="intro-text">
+        <p class="hello">Hello!</p>
+        <p >I'm Majid, a<br>UX/UI Designer<br>and Front-end Developer</p>
+    </div>
+    <!--This is the class for the dash that seperates sections of the page-->
+  <div class="dash"></div>
+<!--This is the section that I talk about my previous work. I gave it the ID so when someone presses it, they are immediatly taken to my previous projects area-->
+<div id="work-section" class="EDEX-container">
+  <!-- The circle that is right next to the edex title-->
+  <div class="EDEX-circle"></div>
+</div>
+<!--The title and subtitle of the project-->
+<span class="EDEX-text text-element" >EDEX</span>
+<span class="brand-redesign">Brand re-design</span>
+
+<div class="EDEX-project-description text-element">
+  I led the redesign of a popular educational website, enhancing user experience and engagement through innovative design.
+</div>
+
+
+<!----------------------------------Under construction card------------------------------------------>
+
+<div class="card" id="fixedCard">Website almost ready!</div>
+
+
+<!--The overlay for the more information about edex-->
+
+
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1>EDEX</h1>
+    <h3>Brand re-design</h3>
+    <h2>Goal of the project</h2>
+    <p>Redesign the online presence and <br>
+      creating an educational tool that is <br>
+      relevant and engaging</p>
+    <h4>Requirments</h4>
+    <p1>This project required tons of research on 
+      gamification<br> and ways to implement it
+      into the design process as<br> well as
+      prove that it works.
+    </p1>
+    <h5>Background</h5>
+    <p2>The existing EDEX website suffered from usability issues, navigation 
+      issues and visual issues. The primary challenge was to redesign the
+      website and encourage users to use the educational tool provided.</p2>
+    <h6>Process</h6>
+    <p3>My first step was to identify the flaws in the current website where I 
+      conducted user testing. Next I researched ways to mediate those
+      flaws and implement them into my design. EDEX did not have any
+      guidelines for what sort of design they wanted so I had to conduct
+      countless tests to see which designs would encourage the user
+      to remain on the website longer as well as working directly with the 
+      shareholders to make sure everything is how they imagine it. 
+    
+      </p3>
+      <div class="edex-image-container">
+        <div class="edex-image1"></div>
+      </div>
+      <div class="edex-image-container edex-image-container2">
+        <div class="edex-image2"></div>
+      </div>
+  </div>
+</div>
+
+
+<button onclick="togglePopup()" class="learn-more text-element" id="learnmore">Learn more<span class="arrow"></span></button>
+
+
+
+
+
+
+
+
+<!--The screen is where the image will be displayed for each project. I wanted it to look like a tablet thats why it has curved corners and is thick-->
+<div class="screen">
+
+  <img class="edex-logo" src="Pics\EDEXscreen.JPG" alt="Edex logo">
+
+</div>
+
+
+
+<!--Second dash to seperate my assignments-->
+<div class="second-dash"></div>
+
+<!----------------------Second project SECTION------------------------->
+
+<div class="OCC-container">
+  <!-- The circle that is right next to the edex title-->
+  <div class="OCC-square"></div>
+</div>
+<!--The title and subtitle of the project-->
+<span class="OCC-text text-element" >OCC</span>
+<span class="occ-concept">Business Concept</span>
+
+<div class="OCC-project-description text-element">
+  I created a business concept for my own idea for a Omani company that produces fertilizer 
+
+</div>
+
+<!-----------------------------------------------------------------------OCC overlay--------------------------------------------------------------------------------------->
+
+<div class="popup1" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content1">
+    <div class="close-btn1" onclick="togglePopup1()">&times;</div>
+    <h1>OCC</h1>
+    <h3>Business Concept</h3>
+    <h2>Goal of the project</h2>
+    <p>Creating a fertilizer production and distribution 
+      company based in Oman. <br> The primary focus is on manufacturing high-quality 
+      fertilizers to meet the <br>diverse agricultural needs of the Omani market.</p>
+    <h4>Background</h4>
+    <p2>I had the idea to create OCC after I heard that the price of fertilizer has increased<br> by 4 times. I saw this as a great opportunity
+      to learn more about the world fertilizer<br> market and understand the needs/wants of its users. I studied and created different<br> versions
+      of the fertilizer that was being sold such as nitrogen-based, phosphorus-based<br> and potassium-based fertilizers as a way of understanding
+      what I am trying to market.<br> I decided to base the company in my home country of Oman as a way of helping to<br> develop Oman's private market and
+      because I saw it as a way of adding <br>something to Oman. 
+    </p2>
+    <h5>Process</h5>
+    <p3>I first researched about why the price of fertilizer has <br>skyrocketed in the past couple of years, followed by <br>an indepth study on the types of fertilizer
+      and what <br>would be the most realisitic for a desert. Afterwards I <br>conducted learned about how to create some<br> nitrogen-based fertilizer and created my first sample!<br>
+      Creating it was a difficult process as I had little experience <br>in chemistry but I was fortunate enough to have a friend <br>who studied chemistry and he gave me 
+      a helping hand when<br> creating it. I created a business plan and a presentation to present my research and testing to a type of "shark tank" event that was setup in my university
+      and was able to convince the sharks to invest in my idea :)   
+
+    </p3>
+  </div>
+</div>
+
+<button onclick="togglePopup1()" class="learn-more-occ text-element" id="learnmore">Learn more<span class="arrow-occ"></span></button>
+
+<!--The screen is where the image will be displayed for each project. I wanted it to look like a tablet thats why it has curved corners and is thick-->
+<div class="screen-occ">
+
+<img class="occ-logo" src="Pics\logooo-removebg-preview.png" alt="OCC logo">
+
+</div>
+
+
+<div class="third-dash"></div>
+
+<!-----------------------FOOTER---------------------------------------->
+
+<div class="footer-container">
+  <!--the footer triangle-->
+    <div class="footer-triangle"></div>
+  
+  </div>
+  <!--Contact information-->
+  <div class="contact">
+      <a href="#" class="text-element">Contact</a>
+  </div>
+  
+  
+  <div class="instagram">
+    <a href="https://www.instagram.com/darwin_cheese/" class="text-element">
+      Instagram
+    </a>
+  </div>
+  
+  
+  <div class="linkedin">
+    <a href="https://www.linkedin.com/in/majid-jahwari-8965a8235/" class="text-element">
+    LinkedIn
+  </a>
+  </div>
+  
+  
+  <div class="email">
+    <a href="mailto:mjahwari123@gmail.com" class="text-element">
+    Email
+  </a>
+  </div>
+  
+
+</body>
+</html>

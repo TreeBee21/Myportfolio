@@ -1,0 +1,1194 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*Menu code*/
+ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 121px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16); /*Drop down shadow for the menu*/
+    z-index: 1000; /*To make sure the menu is always in the front*/
+}
+
+li {
+    display: inline;
+}
+
+.left, .right {
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/*Code for Majid Jahwari*/
+.logo {
+    font-size: 40px; 
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+/*Code for menu options*/
+.menu-item {
+    font-size: 30px; 
+    margin-right: 75px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+/*Code for the circle next to the logo*/
+.circle {
+
+    width: 30px;
+    height: 30px;
+    background-color: #FF5925;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+/*Code for the click color change*/
+.menu-item.active {
+    color: #3E82F9;
+}
+
+/*--------------------------------------------------------End of menu code------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------Code for the shapes (HAT)------------------------------------------------------------------------*/
+.orange-square {
+    width: 193px;
+    height: 193px;
+    background-color: #FF5925;
+    position: absolute;
+    left: 437px;
+    top: 565px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+}
+
+.blue-square {
+    width: 193px;
+    height: 193px;
+    background-color: #3E82F9;
+    position: absolute;
+    left: 244px;
+    top: 565px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+}
+
+.green-square {
+    width: 193px;
+    height: 193px;
+    background-color: #5cda42;
+    position: absolute;
+    left: 630px;
+    top: 565px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+}
+
+.blue-triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 193px solid transparent; /* half width of the triangle */
+    border-right: 193px solid transparent; /* half width of the triangle */
+    border-bottom: 251px solid #3E82F9; /* height and color of the triangle */
+    position: absolute;
+    left: 341px; /* horizontal position */
+    top: 314px; /* vertical position */ 
+}
+.orange-circle {
+    width: 180px; /* width of the circle */
+    height: 180px; /* height of the circle */
+    background-color: #FF5925; /* color of the circle */
+    border-radius: 50%; /* make the shape a circle */
+    position: absolute;
+    left: 444px; /* horizontal position */
+    top: 379px; /* vertical position */
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16); /* inner shadow with x=0, y=3, b=6 */
+}
+
+
+
+
+
+/*--------------------------------------------------------End of hat code------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------Title text (Hello im majid)------------------------------------------------------------------------*/
+.intro-text {
+    position: absolute;
+    left: 960px; /* horizontal position */
+    top: 426px; /* vertical position */
+    color: #3E82F9; /* default text color */
+    font-family: 'Poppins', sans-serif; /* setting the font */
+    
+}
+
+.intro-text .hello {
+    color: #FF5925; /* color for 'Hello!' */
+    font-size: 60px; /* font size for 'Hello!' */
+    font-weight: bold; /* making 'Hello!' bold */
+}
+
+.intro-text p {
+    font-size: 50px; /* font size for the rest of the text */
+    font-weight: 500; /* medium weight for the text */
+    margin: 0; /* remove default margin */
+}
+
+.dash {
+    position: absolute;
+    left: 6%; /* 50% - (88% / 2) */
+    top: 1080.5px;
+    width: 88vw; /* 88% of the viewport width */
+    height: 0;
+    border-top: 1px solid black;
+}
+
+/*----------------------Code for EDEX section---------------------*/
+.EDEX-container {
+    position: absolute;
+    left: 167px; /* Position from the left */
+    top: 1158px; /* Position from the top */
+    display: flex;
+    align-items: center; /* Vertically centers the circle and text */
+}
+/*EDEX Circle code for the bounce animation(167-232)*/
+.EDEX-circle {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .EDEX-circle:before {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background: #999;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  .EDEX-circle:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #FF5925;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 50%;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+  
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+
+/*The title text for edex*/
+.EDEX-text {
+        position: absolute; /* Allows precise positioning */
+        left: 244px; /* Position from the left */
+        top: 1152px; /* Position from the top */
+        color: black; /* Color of the text */
+        font-family: 'Poppins', sans-serif; /* Consistent font style */
+        font-size: 60px; /* Size of the text */
+        font-weight: bold; /* Bold text */
+    
+}
+/*Subtitle text for edex*/
+.brand-redesign {
+    position: absolute; /* Allows precise positioning */
+    left: 244px; /* Position from the left */
+    top: 1242px; /* Position from the top */
+    font-family: 'Poppins', sans-serif; /* Consistent font style */
+    font-size: 25px; /* Size of the text */
+    font-weight: bold; /* Bold text */
+    color: #FF5925; /* Text color */
+}
+
+.EDEX-project-description {
+        position: absolute; /* Allows precise positioning */
+        left: 842px; /* Horizontal position */
+        top: 1181px; /* Vertical position */
+        width: 646px; /* Width of the text box */
+        height: 111px; /* Height of the text box */
+        font-family: 'Poppins', sans-serif; /* Font style */
+        font-size: 25px; /* Font size */
+        line-height: 38px; /* Line spacing */
+        color: black; /* Text color */
+        overflow: hidden; /* Hides any text that overflows the box */
+    }
+    
+    .learn-more {
+        position: absolute;
+        left: 828px; /*I want the learn more to be aligned with the text above it so i had to play around with the numbers a little*/
+        top: 1311px;
+        width: auto; /* Allow the width to adjust based on content */
+        height: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; /* Removes underline from link */
+        white-space: nowrap; /* Prevents wrapping to multiple lines */
+        background: none;
+        border: none;
+        cursor:pointer;
+    }
+    
+    .arrow {
+        display: inline-block; /* Makes the span behave like a block for transformations */
+        width: 0;
+        height: 0;
+        border-left: 13.665px solid transparent; /* half of width */
+        border-right: 13.665px solid transparent; /* half of width */
+        border-bottom: 27px solid #FF5925; /* height and color of the arrow */
+        margin-left: 10px; /* space between text and arrow */
+        transform: rotate(90deg); /* Rotates the arrow */
+        transform-origin: 50% 50%; /* Ensures the rotation is centered */
+    }
+    
+    
+    .screen {
+        width: 1162px;
+        height: 706px;
+        position: absolute;
+        left: 379px;
+        top: 1409px;
+        border: 10px solid #000000;
+        border-radius: 20px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Shadow with y=3 */
+    }
+
+
+    .edex-logo {
+        width: 1162px;
+        height: 706px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1%; /* This will make the image circular */
+    }
+    
+    
+    .second-dash {
+        position: absolute;
+        left: 6%; /* 50% - (88% / 2) */
+        top: 2260px;
+        width: 88vw; /* 88% of the viewport width */
+        height: 0;
+        border-top: 1px solid black;
+        z-index: 0.1;
+    }
+    
+    
+
+/*-------------------------------------------Second section---------------------------------------------*/
+
+    /*I copied the code for the edex section and rearranged it so that it fits into the second project*/
+
+   .OCC-container {
+        position: absolute;
+        left: 167px; /* Position from the left */
+        top: 2358px; /* Position from the top */
+        display: flex;
+        align-items: center; /* Vertically centers the circle and text */
+    }
+    
+    /*Code for the boucning box (286-353)*/
+    
+    .OCC-square {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        position: relative;
+
+    }
+
+    .OCC-square:before {
+        content: '';
+        width: 48px;
+        height: 5px;
+        background: #999;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-radius: 50%;
+        animation: shadow324 0.5s linear infinite;
+    }
+
+    .OCC-square:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgb(61, 106, 255);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+        animation: jump7456 0.5s linear infinite;
+    }
+
+    @keyframes jump7456 {
+        15% {
+          border-bottom-right-radius: 3px;
+        }
+      
+        25% {
+          transform: translateY(9px) rotate(22.5deg);
+        }
+      
+        50% {
+          transform: translateY(18px) scale(1, .9) rotate(45deg);
+          border-bottom-right-radius: 40px;
+        }
+      
+        75% {
+          transform: translateY(9px) rotate(67.5deg);
+        }
+      
+        100% {
+          transform: translateY(0) rotate(90deg);
+        }
+      }
+      
+      @keyframes shadow324 {
+      
+        0%,
+          100% {
+          transform: scale(1, 1);
+        }
+      
+        50% {
+          transform: scale(1.2, 1);
+        }
+      }
+
+    
+    /*Title*/
+    .OCC-text {
+        position: absolute; /* Allows precise positioning */
+        left: 244px; /* Position from the left */
+        top: 2350px; /* Position from the top */
+        color: black; /* Color of the text */
+        font-family: 'Poppins', sans-serif; /* Consistent font style */
+        font-size: 60px; /* Size of the text */
+        font-weight: bold; /* Bold text */
+    }
+    
+    /*Business concept*/
+    .occ-concept {
+        position: absolute; /* Allows precise positioning */
+        left: 244px; /* Position from the left */
+        top: 2437px; /* Position from the top */
+        font-family: 'Poppins', sans-serif; /* Consistent font style */
+        font-size: 25px; /* Size of the text */
+        font-weight: bold; /* Bold text */
+        color: #3E82F9; /* Text color */
+    }
+    
+    .OCC-project-description {
+            position: absolute; /* Allows precise positioning */
+            left: 842px; /* Horizontal position */
+            top: 2376px; /* Vertical position */
+            width: 646px; /* Width of the text box */
+            height: 111px; /* Height of the text box */
+            font-family: 'Poppins', sans-serif; /* Font style */
+            font-size: 25px; /* Font size */
+            line-height: 38px; /* Line spacing */
+            color: black; /* Text color */
+            overflow: hidden; /* Hides any text that overflows the box */
+        }
+        
+        .learn-more-occ {
+            cursor: pointer;
+            position: absolute;
+            left: 828px; /*I want the 'learn more' to be aligned with the text above it so i had to play around with the numbers a little*/
+            top: 2486px;
+            width: auto; /* Allow the width to adjust based on content */
+            height: 35px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none; /* Removes underline from link */
+            white-space: nowrap; /* Prevents wrapping to multiple lines */
+            background: none;
+            border: none;
+        }
+        /*The triangle that replaces the arrow*/
+        .arrow-occ {
+            display: inline-block; /* Makes the span behave like a block for transformations */
+            width: 0;
+            height: 0;
+            border-left: 13.665px solid transparent; /* half of width */
+            border-right: 13.665px solid transparent; /* half of width */
+            border-bottom: 27px solid #3E82F9; /* height and color of the arrow */
+            margin-left: 10px; /* space between text and arrow */
+            transform: rotate(90deg); /* Rotates the arrow */
+            transform-origin: 50% 50%; /* Ensures the rotation is centered */
+        }
+        
+        
+        .screen-occ {
+            width: 1162px;
+            height: 706px;
+            position: absolute;
+            left: 379px;
+            top: 2580px;
+            border: 10px solid #000000;
+            border-radius: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Shadow with y=3 */
+        }
+        
+        .occ-logo {
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+/*-------------------------------------------Third section---------------------------------------------*/
+
+        
+.third-dash {
+    position: absolute;
+    left: 6%; /* 50% - (88% / 2) */
+    top: 3403px;
+    width: 88vw; /* 88% of the viewport width */
+    height: 0;
+    border-top: 1px solid black;
+    z-index: 0.1;
+}
+
+.footer-container {
+    position: absolute;
+    left: 167px; /* Position from the left */
+    top: 3428px; /* Position from the top */
+    display: flex;
+    align-items: center; /* Vertically centers the circle and text */
+}
+
+.footer-triangle {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .footer-triangle:before {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background: #999;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  .footer-triangle:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent; /* Half the width of the triangle */
+    border-right: 24px solid transparent; /* Half the width of the triangle */
+    border-bottom: 48px solid #5CDA42; /* Height and color of the triangle */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+  
+.contact {
+    position: absolute;
+    left: 244px;
+    top: 3422px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+}
+       
+.instagram {
+    position: absolute;
+    left: 251px;
+    top: 3551px;
+    width: 136px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.linkedin {
+    position: absolute;
+    left: 440px;
+    top: 3551px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.email {
+    position: absolute;
+    left: 601px;
+    top: 3551px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.dark-mode-text {
+  position: absolute;
+  left: 654px;
+  top: 310px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;  
+  font-weight: bold;
+  transform: rotate(-16deg);
+  text-align: center;
+}
+/*Code for the arrow that indicates dark mode. Had to mess around with the position of the image a couple times till I got it in a position i wanted */
+.Arrow-darkmode {
+  position: absolute;
+  right: 105px;
+  top: 30px;
+  width: 47px;
+  height: 38px;
+  transform: rotate(20deg);
+}
+
+/*---------------------------About page----------------------------------------------*/
+.picture {
+  position: absolute;
+  left: 316px;
+  top: 289px;
+  width: 394px;
+  height: 558px;
+  border: 2px solid grey; 
+}
+
+.mypic {
+height: 558px;
+width: 394px;
+}
+
+.hat1 {
+  position: absolute;
+  left: 425px;
+  top: 367px;
+  width: 55px;
+  height: 55px;
+  background-color: #3E82F9; 
+}
+
+.hat2 {
+  position: absolute;
+  left: 480px;
+  top: 367px;
+  width: 55px;
+  height: 55px;
+  background-color: #FF5925; 
+}
+
+.hat3 {
+  position: absolute;
+  left: 535px;
+  top: 367px;
+  width: 55px;
+  height: 55px;
+  background-color: #5CDA42; 
+}
+
+.hat4 {
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent; /* half width of the triangle */
+  border-right: 55px solid transparent; /* half width of the triangle */
+  border-bottom: 80px solid #3E82F9; /* height and color of the triangle */
+  position: absolute;
+  left: 454px; /* horizontal position */
+  top: 287px; /* vertical position */ 
+}
+
+.hat5 {
+  width: 50px;
+  height: 50px;
+  background-color: #FF5925; /* color of the circle */
+  border-radius: 50%; /* make the shape a circle */
+  position: absolute;
+  left: 483px; /* horizontal position */
+  top: 313px; /* vertical position */
+}
+
+.about-text {
+  position: absolute;
+  left: 842px; /* horizontal position */
+  top: 289px; /* vertical position */
+  width: 812px; /* width of the text box */
+  height: 135px; /* height of the text box */
+  font-size: 30px;
+  font-family: 'Poppins' sans-serif;
+  font-weight: bold;
+}
+
+.eindhoven {
+  width: 49px;
+  height: 49px;
+}
+
+.Blue-text {
+  position: absolute;
+  left: 842px;
+  top: 413px;
+  width: 564px;
+  height: 178px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 520;
+  color: #3E82F9;
+}
+
+.Orange-text {
+  position: absolute;
+  left: 1594px;
+  top: 413px;
+  width: 208px;
+  height: 428px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #FF5925;
+  line-height: 2.5; 
+}
+
+.bold-text {
+  font-weight: bold; 
+}
+/*------------------------------------------------------------------------------------Overlay for the learn more---------------------------------------------------------------------------------------------*/
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 200vh;
+  height: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 2081px;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0);
+  background: #fff;
+  width: 80%;
+  height: 1830px;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 24px;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #FF5925;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay {
+  display: block;
+
+}
+/*Transition for the popup about learn more edex*/
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .content h1 {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  
+}
+
+.popup .content h1::before {
+  content: "";
+  position: absolute;
+  left: -60px; /* Adjusted the position so that the circle is to the left of h1 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #FF5925;
+  border-radius: 50%;
+}
+
+.popup .content h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF5925;
+
+}
+
+.popup .content h3 {
+  color: #FF5925;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.popup .content h2 {
+  color: #FF5925;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popup .content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.popup .content p1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
+
+.popup .content h5,
+.popup .content p2,
+.popup .content h6,
+.popup .content p3 {
+  position: absolute;
+  left: 859px;
+}
+
+.popup .content h5 {
+  top: 100px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF5925;
+}
+
+.popup .content p2 {
+  top: 200px; /* Adjust the top position as needed */
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 100px;
+}
+
+.popup .content h6 {
+  top: 300px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF5925;
+}
+
+.popup .content p3 {
+  top: 420px; /* Adjust the top position as needed */
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 100px;
+}
+/*----------------------------------------------------------------------------------------------*/
+.popup .content h1,
+.popup .content h3,
+.popup .content h2,
+.popup .content p,
+.popup .content h4,
+.popup .content p1 {
+  position: absolute;
+  left: 100px;
+}
+
+.popup .content h1 {
+  top: 50px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.popup .content h3 {
+  top: 150px; /* Adjust the top position as needed */
+  color: #FF5925;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.popup .content h2 {
+  top: 230px; /* Adjust the top position as needed */
+  color: #FF5925;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popup .content p {
+  top: 270px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.popup .content h4 {
+  top: 410px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF5925;
+}
+
+.popup .content p1 {
+  top: 500px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
+
+/*-------------------------------------------Images for edex-----------------------------------------------*/
+.popup .edex-image1 {
+  position: absolute;
+  left: 100px; 
+  top: 820px; 
+  width: 640px;
+  height: 950px;
+  background-color: #FF5925;
+  border-radius: 5px;
+  background-image: url('Pics/edeX Home page.png'); /* Add path to your image */
+  background-size: cover;
+}
+
+.popup .edex-image2 {
+  position: absolute;
+  left: 900px; 
+  top: 820px; 
+  width: 640px;
+  height: 950px;
+  background-color: #FF5925;
+  border-radius: 5px;
+  background-image: url('Pics/EDEX About us.png'); /* Add path to your image */
+  background-size: cover;
+}
+
+/*----------------------------------------occ overlay--------------------------------------------------------*/
+.popup1 .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 200vh;
+  height: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup1 .content1 {
+  position: absolute;
+  top: 2600px;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0);
+  background: #fff;
+  width: 80%;
+  height: 800px; /*To resize the box edit this number u idiot*/
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 24px;
+}
+
+.popup1 .close-btn1 {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #3E82F9;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup1.active .overlay {
+  display: block;
+
+}
+/*Transition for the popup about learn more*/
+.popup1.active .content1 {
+  transition:all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+/*---------------------------OCC popup text styles--------------=========*/
+.popup1 .content1 h1 {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  left: 100px;
+}
+
+.popup1 .content1 h3 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: #3E82F9;
+  left: 100px;
+}
+
+.popup1 .content1 h2 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #3E82F9;
+
+}
+
+.popup1 .content1 p {
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.popup1 .content1 h4 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #3E82F9;
+
+}
+
+.popup1 .content1 p2 {
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.popup1 .content1 h5 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #3E82F9;
+}
+
+.popup1 .content1 p3 {
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.popup1 .content1 h5,
+.popup1 .content1 p3 {
+  position: absolute;
+  left: 60%; /* Adjust the left position as needed */
+}
+
+.popup1 .content1 h5 {
+  top: 100px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3E82F9;
+}
+
+.popup1 .content1 p3 {
+  top: 200px; /* Adjust the top position as needed */
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup1 .content1 p2 {
+  top: 300px; /* Adjust the top position as needed */
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup1 .content1 h4 {
+  top: 400px; /* Adjust the top position as needed */
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3E82F9;
+}
+
+/*----------------------------------------website under construction--------------------------------------*/
+.card {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 220px;
+  height: 320px;
+  background: #3E82F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 0.5;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #FF5925;
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "90% Complete!";
+}
+
